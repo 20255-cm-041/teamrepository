@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block5_parent {
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block5_child1 {
+    height: 450px;
+    width: 350px;
+    background-color: #FFFFFF;
+}
+
+.block5_child1_c1 {
+    height: 60px;
+    width: 350px;
+    background-color: #FFFFFF;
+}
+
+.block5_child1_c1_circle {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.block5_child1_c2 {
+    height: 70px;
+    width: 350px;
+    background-color: #FFFFFF;
+    font-size: 25px;
+    word-spacing: 5px;
+    color: #2A2227;
+}
+
+.block5_child1_c3 {
+    height: 140px;
+    width: 350px;
+    background-color: #FFFFFF;
+    color: #2A2227;
+}
+
+.block5_child1_c4 {
+    height: 110px;
+    width: 350px;
+    background-color: #FFFFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #111111;
+}
+
+.block5_child1_c5 {
+    height: 70px;
+    width: 350px;
+    background-color: #FFFFFF;
+}
+
+.block5_child1_c5_button {
+    height: 40px;
+    width: 120px;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block5_child2 {
+    height: 420px;
+    width: 350px;
+    background-image: url("lady.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: move;
+    transition: all 1s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 10px;
+    }
+}
